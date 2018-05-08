@@ -126,6 +126,5 @@ def getDados(cenario, resolucao, frequencia, intervTempo, var, lat, lng):
         retorno.append(tupla)
     
     retorno = pd.DataFrame.from_records(retorno, index=cabecalho[0], exclude=None, columns=cabecalho, coerce_float=False, nrows=None)
-    retorno.index = pd.to_datetime(retorno.index)
 
     return retorno

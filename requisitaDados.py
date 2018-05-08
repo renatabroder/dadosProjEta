@@ -68,5 +68,7 @@ def interface():
     print("Preparando requisição para " + str(cen) + ', ' + str(res) + 'km, ' + str(freq) + ', ' + str(var) + '...')
     dados = gd.getDados(cen, res, freq, intervTempo, var, lat, lng)
 
+    print("\n\nDataframe requisitado:\n")
     print(dados)
+    
     return dados
